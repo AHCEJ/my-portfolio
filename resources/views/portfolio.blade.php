@@ -430,7 +430,7 @@ footer p {
 
 <!-- NAV -->
 <nav>
-  <a class="nav-logo" href="#">CDL · Rosa</a>
+  <a class="nav-logo" href="#">CL · LA ROSA</a>
   <div class="nav-links">
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
