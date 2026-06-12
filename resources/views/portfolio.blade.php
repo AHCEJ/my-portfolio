@@ -644,7 +644,7 @@ footer p {
     <p class="section-eyebrow">04 — Education</p>
     <h2 class="section-title">Academic Background</h2>
     <div class="edu-block">
-      <div class="edu-year">2019 — 2023</div>
+      <div class="edu-year">2022 — 2026</div>
       <div>
         <div class="edu-school">Occidental Mindoro State College</div>
         <div class="edu-degree">Bachelor of Science in Information Technology</div>
