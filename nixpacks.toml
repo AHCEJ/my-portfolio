@@ -1,2 +1,8 @@
+[phases.setup]
+nixPkgs = ["php82", "php82Extensions.mbstring", "php82Extensions.xml", "php82Extensions.tokenizer", "php82Extensions.ctype", "php82Extensions.fileinfo", "php82Extensions.openssl", "php82Extensions.pdo", "composer"]
+
+[phases.build]
+cmds = ["composer install --no-dev --optimize-autoloader"]
+
 [start]
 cmd = "php -S 0.0.0.0:$PORT -t public/"
