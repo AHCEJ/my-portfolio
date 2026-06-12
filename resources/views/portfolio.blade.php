@@ -670,14 +670,14 @@ footer p {
         <p class="contact-sub">Open to freelance projects, full-time roles, and collaborations. Drop me a message and let's build something great together.</p>
       </div>
       <div class="contact-links">
-        <a href="mailto:chris.larosa@email.com" class="contact-link">
-          <span>📧 chris.larosa@email.com</span>
+        <a href="mailto:chrislarosa@gmail.com" class="contact-link">
+          <span>📧 chrislarosa.bsit@gmail.com</span>
           <span class="contact-link-arrow">→</span>
         </a>
-        <a href="https://www.facebook.com/Sirhc0120" class="contact-link">
-          <span>💼 Facebook Profile</span>
-          <span class="contact-link-arrow">→</span>
-        </a>
+        <a href="https://facebook.com/yourprofile" class="contact-link">
+  <span>🔵 Facebook Profile</span>
+  <span class="contact-link-arrow">→</span>
+</a>
         <a href="https://github.com/AHCEJ" class="contact-link">
           <span>🐙 GitHub Profile</span>
           <span class="contact-link-arrow">→</span>
