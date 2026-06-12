@@ -531,11 +531,11 @@ footer p {
         </div>
         <div class="detail-row">
           <span class="detail-key">School</span>
-          <span class="detail-val">OccMSC</span>
+          <span class="detail-val">OMSC</span>
         </div>
         <div class="detail-row">
           <span class="detail-key">Location</span>
-          <span class="detail-val">Occidental Mindoro, PH</span>
+          <span class="detail-val">San Jose,Occidental Mindoro, PH</span>
         </div>
         <div class="detail-row">
           <span class="detail-key">Status</span>
