@@ -674,7 +674,7 @@ footer p {
           <span>📧 chrislarosa.bsit@gmail.com</span>
           <span class="contact-link-arrow">→</span>
         </a>
-        <a href="https://facebook.com/yourprofile" class="contact-link">
+        <a href="https://www.facebook.com/Sirhc0120" class="contact-link">
   <span>🔵 Facebook Profile</span>
   <span class="contact-link-arrow">→</span>
 </a>
