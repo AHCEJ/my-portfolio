@@ -652,7 +652,7 @@ footer {
 
   <div class="hero-image">
     <div class="profile-circle">
-      <img src="./chris.png" alt="Chris D. La Rosa"
+      <img src="image/chris.png" alt="Chris D. La Rosa"
         onerror="this.parentElement.innerHTML='<div class=&quot;profile-initials&quot;>CL</div>'">>
     </div>
   </div>
@@ -837,7 +837,7 @@ footer {
 
 <!-- FOOTER -->
 <footer>
-  <p>© 2026 Chris D. La Rosa. Built with HTML, CSS & Modern Web Technologies.</p>
+  <p>© 2026 Chris D. La Rosa. Built with HTML, CSS & PHP in Laravel</p>
 </footer>
 
 </body>
