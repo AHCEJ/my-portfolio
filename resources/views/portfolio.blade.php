@@ -654,8 +654,9 @@ footer {
     <div class="profile-circle">
       <img src="image/chris.png" alt="Chris D. La Rosa"
         onerror="this.parentElement.innerHTML='<div class=&quot;profile-initials&quot;>CL</div>'">
+        <h2 class="section-title">CHRIS D. LA ROSA</h2>
     </div>
-    <h2 class="section-title">Featured Projects</h2>
+
   </div>
 </section>
 
