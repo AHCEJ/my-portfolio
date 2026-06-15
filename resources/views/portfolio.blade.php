@@ -37,7 +37,6 @@ body {
   overflow-x: hidden;
 }
 
-/* ── GRADIENT BACKGROUND ── */
 body::before {
   content: '';
   position: fixed;
@@ -51,7 +50,6 @@ body::before {
   z-index: 0;
 }
 
-/* ── NAVIGATION ── */
 nav {
   position: fixed;
   top: 0;
@@ -111,7 +109,6 @@ nav {
   border-color: var(--accent-bright);
 }
 
-/* ── HERO SECTION ── */
 .hero {
   position: relative;
   min-height: 100vh;
@@ -246,7 +243,6 @@ nav {
   color: var(--text-white);
 }
 
-/* ── TRUSTED BY ── */
 .trusted-section {
   padding: 60px;
   border-top: 1px solid var(--border);
@@ -287,7 +283,6 @@ nav {
   color: var(--accent);
 }
 
-/* ── FEATURED PROJECTS ── */
 .featured-section {
   padding: 120px 60px;
   max-width: 1200px;
@@ -378,7 +373,17 @@ nav {
   font-weight: 500;
 }
 
-/* ── STATS SECTION ── */
+/* Special highlight tag for QR/RFID */
+.tag-highlight {
+  font-size: 11px;
+  background: rgba(168, 85, 247, 0.25);
+  color: #c4b5fd;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-weight: 600;
+  border: 1px solid rgba(168, 85, 247, 0.4);
+}
+
 .stats-section {
   padding: 100px 60px;
   background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(168, 85, 247, 0.05));
@@ -428,7 +433,6 @@ nav {
   letter-spacing: 0.08em;
 }
 
-/* ── SKILLS SECTION ── */
 .skills-section {
   padding: 120px 60px;
   max-width: 1200px;
@@ -473,7 +477,6 @@ nav {
   line-height: 1.6;
 }
 
-/* ── CONTACT SECTION ── */
 .contact-section {
   padding: 120px 60px;
   background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(168, 85, 247, 0.05));
@@ -544,7 +547,6 @@ nav {
   font-size: 20px;
 }
 
-/* ── FOOTER ── */
 footer {
   border-top: 1px solid var(--border);
   padding: 40px 60px;
@@ -553,7 +555,6 @@ footer {
   font-size: 13px;
 }
 
-/* ── RESPONSIVE ── */
 @media (max-width: 768px) {
   nav {
     padding: 0 24px;
@@ -624,7 +625,7 @@ footer {
 
 <!-- NAVIGATION -->
 <nav>
-  <a class="nav-logo" href="#">CD·LR</a>
+  <a class="nav-logo" href="#">CHRIS D. LA ROSA</a>
   <div class="nav-links">
     <a href="#projects">Projects</a>
     <a href="#skills">Skills</a>
@@ -681,6 +682,8 @@ footer {
   </div>
 
   <div class="featured-grid">
+
+    <!-- PROJECT 01 -->
     <div class="project-card">
       <p class="project-number">PROJECT / 01</p>
       <h3 class="project-title">Student Information System</h3>
@@ -693,30 +696,40 @@ footer {
       </div>
     </div>
 
+    <!-- PROJECT 02 -->
     <div class="project-card">
       <p class="project-number">PROJECT / 02</p>
-      <h3 class="project-title">Inventory Management System</h3>
-      <p class="project-desc">Full-stack CRUD system for tracking products, stock levels, and transactions with user authentication, role management, and PDF reports.</p>
+      <h3 class="project-title">Supply Office Inventory System</h3>
+      <p class="project-desc">
+        Full-stack inventory management system built for the Supply Office of Occidental Mindoro State College (OMSC). Handles stock tracking, transactions, and asset management with support for <strong style="color: #c4b5fd;">QR Code scanning</strong> and <strong style="color: #c4b5fd;">RFID reader integration</strong> for fast, accurate inventory operations. Includes user authentication, role-based access, and printable reports.
+      </p>
       <div class="project-tags">
         <span class="tag">PHP</span>
         <span class="tag">MySQL</span>
+        <span class="tag">HTML / CSS</span>
         <span class="tag">JavaScript</span>
-        <span class="tag">CSS</span>
+        <span class="tag-highlight">📷 QR Code</span>
+        <span class="tag-highlight">📡 RFID</span>
       </div>
     </div>
 
+    <!-- PROJECT 03 -->
     <div class="project-card">
       <p class="project-number">PROJECT / 03</p>
-      <h3 class="project-title">Personal Blog Platform</h3>
-      <p class="project-desc">A modern blog application with user authentication, article creation, categories, and a clean, responsive reading interface.</p>
+      <h3 class="project-title">LGU San Jose Freelancer Platform</h3>
+      <p class="project-desc">
+        A web-based freelancing platform designed for the local community of San Jose, Occidental Mindoro. Connects skilled freelancers — developers, designers, writers, and more — with LGU offices, barangays, local businesses, and residents seeking digital services. Features job posting, freelancer profiles, service listings, and a local job matching system tailored for the San Jose community.
+      </p>
       <div class="project-tags">
         <span class="tag">Laravel</span>
-        <span class="tag">Blade</span>
         <span class="tag">MySQL</span>
+        <span class="tag">Blade</span>
         <span class="tag">Tailwind</span>
+        <span class="tag">JavaScript</span>
       </div>
     </div>
 
+    <!-- PROJECT 04 -->
     <div class="project-card">
       <p class="project-number">PROJECT / 04</p>
       <h3 class="project-title">Online Appointment Booking</h3>
@@ -728,6 +741,7 @@ footer {
         <span class="tag">Blade</span>
       </div>
     </div>
+
   </div>
 </section>
 
