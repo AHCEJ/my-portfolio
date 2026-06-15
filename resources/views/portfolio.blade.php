@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Chris D. La Rosa — Web Developer & IT Professional</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <style>
 *, *::before, *::after { 
   box-sizing: border-box; 
@@ -210,30 +211,31 @@ nav {
 }
 
 .profile-circle {
-  width: 320px;
-  height: 320px;
-  border-radius: 50%;
-  background: radial-gradient(circle at 30% 30%, var(--accent), transparent),
-              radial-gradient(circle at 70% 70%, var(--accent-light), transparent);
+  width: 380px;
+  height: 480px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--bg-card), rgba(124, 58, 237, 0.1));
+  border: 2px solid var(--border);
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  box-shadow: 0 0 60px rgba(124, 58, 237, 0.3);
+  box-shadow: 0 20px 60px rgba(124, 58, 237, 0.2);
+  overflow: hidden;
 }
 
 .profile-circle img {
-  width: 310px;
-  height: 310px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid var(--bg-dark);
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  background: transparent;
 }
 
 .profile-initials {
-  width: 310px;
-  height: 310px;
-  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
   background: linear-gradient(135deg, var(--accent), var(--accent-bright));
   display: flex;
   align-items: center;
@@ -242,7 +244,6 @@ nav {
   font-size: 80px;
   font-weight: 700;
   color: var(--text-white);
-  border: 4px solid var(--bg-dark);
 }
 
 /* ── TRUSTED BY ── */
@@ -532,6 +533,12 @@ nav {
   border-color: var(--accent);
 }
 
+.contact-link i {
+  margin-right: 10px;
+  color: var(--accent);
+  font-size: 18px;
+}
+
 .contact-link-arrow {
   color: var(--accent);
   font-size: 20px;
@@ -569,18 +576,19 @@ footer {
   }
 
   .profile-circle {
-    width: 240px;
-    height: 240px;
+    width: 100%;
+    max-width: 280px;
+    height: 360px;
   }
 
   .profile-circle img {
-    width: 230px;
-    height: 230px;
+    width: 100%;
+    height: 100%;
   }
 
   .profile-initials {
-    width: 230px;
-    height: 230px;
+    width: 100%;
+    height: 100%;
     font-size: 60px;
   }
 
@@ -644,7 +652,7 @@ footer {
 
   <div class="hero-image">
     <div class="profile-circle">
-      <img src="https://via.placeholder.com/300" alt="Chris D. La Rosa"
+      <img src="chris.png" alt="Chris D. La Rosa"
         onerror="this.parentElement.innerHTML='<div class=&quot;profile-initials&quot;>CL</div>'">
     </div>
   </div>
@@ -812,15 +820,15 @@ footer {
 
     <div class="contact-links">
       <a href="mailto:chrislarosa.bsit@gmail.com" class="contact-link">
-        <span>📧 Email Me</span>
+        <span><i class="fas fa-envelope"></i> Email Me</span>
         <span class="contact-link-arrow">→</span>
       </a>
       <a href="https://github.com/AHCEJ" target="_blank" class="contact-link">
-        <span>🐙 GitHub Profile</span>
+        <span><i class="fab fa-github"></i> GitHub Profile</span>
         <span class="contact-link-arrow">→</span>
       </a>
       <a href="https://www.facebook.com/Sirhc0120" target="_blank" class="contact-link">
-        <span>👤 Facebook</span>
+        <span><i class="fab fa-facebook"></i> Facebook</span>
         <span class="contact-link-arrow">→</span>
       </a>
     </div>
