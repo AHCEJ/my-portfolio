@@ -653,7 +653,7 @@ footer {
   <div class="hero-image">
     <div class="profile-circle">
       <img src="image/chris.png" alt="Chris D. La Rosa"
-        onerror="this.parentElement.innerHTML='<div class=&quot;profile-initials&quot;>CL</div>'">>
+        onerror="this.parentElement.innerHTML='<div class=&quot;profile-initials&quot;>CL</div>'">
     </div>
   </div>
 </section>
