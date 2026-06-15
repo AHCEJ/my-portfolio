@@ -214,13 +214,13 @@ nav {
   width: 380px;
   height: 480px;
   border-radius: 8px;
-  background: linear-gradient(135deg, var(--bg-card), rgba(124, 58, 237, 0.1));
+  background: var(--bg-card);
   border: 2px solid var(--border);
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  box-shadow: 0 20px 60px rgba(124, 58, 237, 0.2);
+  box-shadow: 0 20px 60px rgba(124, 58, 237, 0.3);
   overflow: hidden;
 }
 
@@ -652,11 +652,9 @@ footer {
 
   <div class="hero-image">
     <div class="profile-circle">
-      <img src="image/chris.png" alt="Chris D. La Rosa"
-        onerror="this.parentElement.innerHTML='<div class=&quot;profile-initials&quot;>CL</div>'">
-        <h2 class="section-title">CHRIS D. LA ROSA</h2>
+      <img src="./chris.png" alt="Chris D. La Rosa"
+        onerror="this.parentElement.innerHTML='<div class=&quot;profile-initials&quot;>CL</div>'">>
     </div>
-
   </div>
 </section>
 
