@@ -243,6 +243,196 @@ nav {
   color: var(--text-white);
 }
 
+/* ABOUT SECTION STYLES */
+.about-section {
+  padding: 120px 60px;
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.05), rgba(168, 85, 247, 0.02));
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  position: relative;
+  z-index: 1;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.about-header {
+  margin-bottom: 80px;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 80px;
+  margin-bottom: 80px;
+  align-items: start;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.about-intro h3 {
+  font-family: var(--serif);
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--text-white);
+  margin-bottom: 16px;
+  line-height: 1.3;
+}
+
+.about-intro p {
+  font-size: 15px;
+  color: var(--text-gray);
+  line-height: 1.8;
+}
+
+.about-intro strong {
+  color: var(--accent-light);
+}
+
+.about-paragraph h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-white);
+  margin-bottom: 12px;
+}
+
+.about-paragraph p {
+  font-size: 14px;
+  color: var(--text-gray);
+  line-height: 1.8;
+}
+
+.about-credentials {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.credential-card {
+  background: linear-gradient(135deg, var(--bg-card), rgba(124, 58, 237, 0.08));
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 32px;
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.credential-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(124, 58, 237, 0.15);
+}
+
+.credential-icon {
+  font-size: 32px;
+}
+
+.credential-card h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-white);
+}
+
+.credential-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.credential-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--accent-light);
+}
+
+.credential-school {
+  font-size: 13px;
+  color: var(--text-white);
+  font-weight: 500;
+}
+
+.credential-location,
+.credential-year {
+  font-size: 12px;
+  color: var(--text-gray);
+}
+
+.school-logo-placeholder,
+.course-logo-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 20px;
+  background: rgba(124, 58, 237, 0.05);
+  border-radius: 8px;
+  border: 1px dashed var(--border);
+  min-height: 120px;
+  justify-content: center;
+}
+
+.school-logo-placeholder img,
+.course-logo-placeholder img {
+  max-width: 100%;
+  max-height: 80px;
+  object-fit: contain;
+}
+
+.logo-fallback {
+  font-size: 48px;
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-label {
+  font-size: 11px;
+  color: var(--text-gray);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+}
+
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 32px;
+  padding: 40px;
+  background: rgba(124, 58, 237, 0.1);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.about-stat {
+  text-align: center;
+}
+
+.stat-year {
+  font-family: var(--serif);
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+.stat-desc {
+  font-size: 13px;
+  color: var(--text-gray);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* TRUSTED BY SECTION */
 .trusted-section {
   padding: 60px;
   border-top: 1px solid var(--border);
@@ -593,6 +783,12 @@ footer {
     font-size: 60px;
   }
 
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about-section,
   .trusted-section,
   .featured-section,
   .skills-section,
@@ -610,6 +806,10 @@ footer {
   }
 
   .stats-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about-stats {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -655,6 +855,101 @@ footer {
     <div class="profile-circle">
       <img src="image/chris.png" alt="Chris D. La Rosa"
         onerror="this.parentElement.innerHTML='<div class=&quot;profile-initials&quot;>CL</div>'">
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="about-section">
+  <div class="about-container">
+    <div class="about-header">
+      <p class="section-label">My Story</p>
+      <h2 class="section-title">About Me</h2>
+    </div>
+
+    <div class="about-content">
+      <div class="about-text">
+        <div class="about-intro">
+          <h3>Hey, I'm Chris D. La Rosa</h3>
+          <p>
+            A passionate <strong>web developer and IT professional</strong> based in San Jose, Occidental Mindoro, Philippines. I'm 26 years old and recently graduated from <strong>Occidental Mindoro State University</strong> with a Bachelor of Science in Information Technology degree.
+          </p>
+        </div>
+
+        <div class="about-paragraph">
+          <h4>My Journey</h4>
+          <p>
+            Throughout my academic journey at OMSU, I developed a deep passion for building clean, functional web applications that solve real-world problems. My curriculum focused on full-stack web development, database management, and software engineering principles, giving me a solid foundation in modern development practices.
+          </p>
+        </div>
+
+        <div class="about-paragraph">
+          <h4>What Drives Me</h4>
+          <p>
+            I'm driven by the challenge of transforming ideas into working software. Whether it's building an inventory management system with QR code integration, creating a student information platform, or developing a local freelancer marketplace, I'm committed to delivering solutions that make a tangible impact in my community. I believe in continuous learning and staying updated with the latest web technologies and best practices.
+          </p>
+        </div>
+
+        <div class="about-paragraph">
+          <h4>Beyond Code</h4>
+          <p>
+            When I'm not coding, I'm exploring new technologies, contributing to local projects that benefit my community, and collaborating with other developers. I'm open to freelance opportunities, full-time positions, and exciting collaborations that align with my passion for creating meaningful digital solutions.
+          </p>
+        </div>
+      </div>
+
+      <div class="about-credentials">
+        <div class="credential-card education">
+          <div class="credential-icon">🎓</div>
+          <h4>Education</h4>
+          <div class="credential-details">
+            <p class="credential-title">Bachelor of Science in Information Technology</p>
+            <p class="credential-school">Occidental Mindoro State University</p>
+            <p class="credential-location">San Jose, Occidental Mindoro, Philippines</p>
+            <p class="credential-year">Class of 2026</p>
+          </div>
+          <div class="school-logo-placeholder">
+            <img src="image/omsu-logo.png" alt="OMSU Logo" 
+              onerror="this.parentElement.innerHTML='<div class=&quot;logo-fallback&quot;><i class=&quot;fas fa-university&quot;></i></div>'">
+            <p class="logo-label">OMSU</p>
+          </div>
+        </div>
+
+        <div class="credential-card course">
+          <div class="credential-icon">💻</div>
+          <h4>Specialization</h4>
+          <div class="credential-details">
+            <p class="credential-title">Full Stack Web Development</p>
+            <p class="credential-school">Bachelor of Science in Information Technology</p>
+            <p class="credential-location">Focus on Modern Web Technologies</p>
+            <p class="credential-year">Proficiency in PHP, Laravel, MySQL, JavaScript</p>
+          </div>
+          <div class="course-logo-placeholder">
+            <img src="image/bsit-logo.png" alt="BSIT Logo" 
+              onerror="this.parentElement.innerHTML='<div class=&quot;logo-fallback&quot;><i class=&quot;fas fa-laptop-code&quot;></i></div>'">
+            <p class="logo-label">BSIT</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-stats">
+      <div class="about-stat">
+        <p class="stat-year">2026</p>
+        <p class="stat-desc">Graduation Year</p>
+      </div>
+      <div class="about-stat">
+        <p class="stat-year">26</p>
+        <p class="stat-desc">Years Young</p>
+      </div>
+      <div class="about-stat">
+        <p class="stat-year">4+</p>
+        <p class="stat-desc">Major Projects</p>
+      </div>
+      <div class="about-stat">
+        <p class="stat-year">6+</p>
+        <p class="stat-desc">Technologies</p>
+      </div>
     </div>
   </div>
 </section>
