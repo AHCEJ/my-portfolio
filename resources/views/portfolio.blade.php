@@ -249,7 +249,8 @@ nav {
   background: linear-gradient(135deg, rgba(124, 58, 237, 0.05), rgba(168, 85, 247, 0.02));
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
-  position: relative;
+  position: center;
+
   z-index: 1;
 }
 
