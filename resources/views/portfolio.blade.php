@@ -838,7 +838,7 @@ footer {
 <!-- HERO SECTION -->
 <section class="hero">
   <div class="hero-content">
-    <p class="hero-label">Web Developer & IT Professional</p>
+    <p class="hero-label">Web Developer & Graphic Designer</p>
     <h1 class="hero-title">
       Web Developer<br><span class="accent-text">&</span> Builder<br>of Digital Solutions
     </h1>
@@ -863,8 +863,8 @@ footer {
 <section id="about" class="about-section">
   <div class="about-container">
     <div class="about-header">
-      <p class="section-label">My Story</p>
-      <h2 class="section-title">About Me</h2>
+      <p class="section-label">About Me</p>
+     
     </div>
 
     <div class="about-content">
@@ -876,27 +876,7 @@ footer {
           </p>
         </div>
 
-        <div class="about-paragraph">
-          <h4>My Journey</h4>
-          <p>
-            Throughout my academic journey at OMSU, I developed a deep passion for building clean, functional web applications that solve real-world problems. My curriculum focused on full-stack web development, database management, and software engineering principles, giving me a solid foundation in modern development practices.
-          </p>
-        </div>
-
-        <div class="about-paragraph">
-          <h4>What Drives Me</h4>
-          <p>
-            I'm driven by the challenge of transforming ideas into working software. Whether it's building an inventory management system with QR code integration, creating a student information platform, or developing a local freelancer marketplace, I'm committed to delivering solutions that make a tangible impact in my community. I believe in continuous learning and staying updated with the latest web technologies and best practices.
-          </p>
-        </div>
-
-        <div class="about-paragraph">
-          <h4>Beyond Code</h4>
-          <p>
-            When I'm not coding, I'm exploring new technologies, contributing to local projects that benefit my community, and collaborating with other developers. I'm open to freelance opportunities, full-time positions, and exciting collaborations that align with my passion for creating meaningful digital solutions.
-          </p>
-        </div>
-      </div>
+        
 
       <div class="about-credentials">
         <div class="credential-card education">
@@ -915,43 +895,8 @@ footer {
           </div>
         </div>
 
-        <div class="credential-card course">
-          <div class="credential-icon">💻</div>
-          <h4>Specialization</h4>
-          <div class="credential-details">
-            <p class="credential-title">Full Stack Web Development</p>
-            <p class="credential-school">Bachelor of Science in Information Technology</p>
-            <p class="credential-location">Focus on Modern Web Technologies</p>
-            <p class="credential-year">Proficiency in PHP, Laravel, MySQL, JavaScript</p>
-          </div>
-          <div class="course-logo-placeholder">
-            <img src="image/bsit-logo.png" alt="BSIT Logo" 
-              onerror="this.parentElement.innerHTML='<div class=&quot;logo-fallback&quot;><i class=&quot;fas fa-laptop-code&quot;></i></div>'">
-            <p class="logo-label">BSIT</p>
-          </div>
-        </div>
-      </div>
-    </div>
+       
 
-    <div class="about-stats">
-      <div class="about-stat">
-        <p class="stat-year">2026</p>
-        <p class="stat-desc">Graduation Year</p>
-      </div>
-      <div class="about-stat">
-        <p class="stat-year">26</p>
-        <p class="stat-desc">Years Young</p>
-      </div>
-      <div class="about-stat">
-        <p class="stat-year">4+</p>
-        <p class="stat-desc">Major Projects</p>
-      </div>
-      <div class="about-stat">
-        <p class="stat-year">6+</p>
-        <p class="stat-desc">Technologies</p>
-      </div>
-    </div>
-  </div>
 </section>
 
 <!-- TRUSTED BY -->
