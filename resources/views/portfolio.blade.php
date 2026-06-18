@@ -249,9 +249,9 @@ nav {
   background: linear-gradient(135deg, rgba(124, 58, 237, 0.05), rgba(168, 85, 247, 0.02));
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
-  position: center;
-
+  position: relative;
   z-index: 1;
+  text-align: center;
 }
 
 .about-container {
@@ -262,20 +262,31 @@ nav {
 
 .about-header {
   margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .about-content {
-  display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
   margin-bottom: 80px;
-  align-items: start;
 }
 
 .about-text {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 32px;
+  max-width: 700px;
+}
+
+.about-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .about-intro h3 {
@@ -291,6 +302,7 @@ nav {
   font-size: 15px;
   color: var(--text-gray);
   line-height: 1.8;
+  text-align: center;
 }
 
 .about-intro strong {
@@ -313,7 +325,10 @@ nav {
 .about-credentials {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 24px;
+  width: 100%;
+  max-width: 480px;
 }
 
 .credential-card {
@@ -324,7 +339,10 @@ nav {
   transition: all 0.3s;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
   gap: 20px;
+  width: 100%;
 }
 
 .credential-card:hover {
@@ -346,6 +364,7 @@ nav {
 .credential-details {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 8px;
 }
 
@@ -431,47 +450,6 @@ nav {
   color: var(--text-gray);
   text-transform: uppercase;
   letter-spacing: 0.08em;
-}
-
-/* TRUSTED BY SECTION */
-.trusted-section {
-  padding: 60px;
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-  background: rgba(26, 26, 46, 0.4);
-}
-
-.trusted-container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.trusted-label {
-  font-size: 12px;
-  color: var(--text-gray);
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin-bottom: 32px;
-}
-
-.trusted-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 40px;
-  align-items: center;
-}
-
-.trusted-item {
-  font-size: 14px;
-  color: var(--text-gray);
-  font-weight: 500;
-  opacity: 0.7;
-  transition: opacity 0.3s;
-}
-
-.trusted-item:hover {
-  opacity: 1;
-  color: var(--accent);
 }
 
 .featured-section {
@@ -784,13 +762,7 @@ footer {
     font-size: 60px;
   }
 
-  .about-content {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
   .about-section,
-  .trusted-section,
   .featured-section,
   .skills-section,
   .contact-section {
@@ -865,7 +837,6 @@ footer {
   <div class="about-container">
     <div class="about-header">
       <p class="section-label">About Me</p>
-     
     </div>
 
     <div class="about-content">
@@ -876,8 +847,7 @@ footer {
             A passionate <strong>web developer and IT professional</strong> based in San Jose, Occidental Mindoro, Philippines. I'm 26 years old and recently graduated from <strong>Occidental Mindoro State University</strong> with a Bachelor of Science in Information Technology degree.
           </p>
         </div>
-
-        
+      </div>
 
       <div class="about-credentials">
         <div class="credential-card education">
@@ -895,22 +865,7 @@ footer {
             <p class="logo-label">OMSU</p>
           </div>
         </div>
-
-       
-
-</section>
-
-<!-- TRUSTED BY -->
-<section class="trusted-section">
-  <div class="trusted-container">
-    <p class="trusted-label">Experienced With</p>
-    <div class="trusted-grid">
-      <div class="trusted-item">📦 Laravel</div>
-      <div class="trusted-item">🗄️ MySQL</div>
-      <div class="trusted-item">⚡ JavaScript</div>
-      <div class="trusted-item">🎨 HTML / CSS</div>
-      <div class="trusted-item">🔧 Git & GitHub</div>
-      <div class="trusted-item">📱 Responsive Design</div>
+      </div>
     </div>
   </div>
 </section>
